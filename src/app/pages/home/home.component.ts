@@ -60,7 +60,7 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['details-movie', id]);
   }
 
-  @HostListener('window:scroll', ['$event']) // for window scroll events
+  @HostListener('window:scroll', ['$event'])
   async onScroll(event: any) {
     if ((window.innerHeight + window.scrollY) > document.body.offsetHeight) {
       this.pagPopular = this.pagPopular + 1;

@@ -10,8 +10,8 @@
 
 <h1 class="display-4 text-center mt-2">Peliculas más populares</h1>
 
-<div class="row mt-5" id="scroll">
-    <div *ngFor="let opt of moviesPopular.data" class="col-lg-4">
+<div class="row mt-5">
+    <div *ngFor="let opt of moviesPopular.data" class="col-lg-4 col-sm-6">
         <div class="shadow-lg p-3 mb-5 bg-white rounded col-popular">
             <img class="img-popular mb-2" [src]="moviesPopular.imageBaseUrl + opt.backdrop_path">
             <label for="">{{opt.title}}</label>

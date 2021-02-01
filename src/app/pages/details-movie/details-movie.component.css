@@ -1,0 +1,22 @@
+.carousel-images{
+    margin: auto;
+    width: 80%;
+}
+
+.fz{
+    font-size: xx-large;
+    margin-top: 4%;
+}
+
+.img-portada{
+    text-align: center;
+    margin-top: 4%;
+}
+
+/* .imagen-portada{
+    width: 30%;
+} */
+
+.imagen-pelicula{
+    width: 10%;
+}

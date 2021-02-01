@@ -1,0 +1,19 @@
+.carousel-images{
+    margin: auto;
+    width: 80%;
+}
+
+.img-popular{
+    width: 50%;
+}
+
+.col-popular{
+    display: grid;
+    justify-items: center;
+    cursor: pointer;
+    margin: 5%;
+}
+
+.spn{
+    margin-right: 10px;
+}

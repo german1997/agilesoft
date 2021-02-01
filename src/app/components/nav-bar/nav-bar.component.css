@@ -1,0 +1,18 @@
+p{
+    color: white;
+    margin-right: 5%;
+}
+
+div{
+    width: 100%;
+    text-align-last: right;
+}
+
+a{
+    margin-left: 3%;
+}
+
+p a:hover{
+    color: blue;
+    cursor: pointer;
+}

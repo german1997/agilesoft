@@ -1,0 +1,44 @@
+<app-nav-bar></app-nav-bar>
+
+<h1 class="display-4 text-center mt-4">Peliculas en estreno</h1>
+
+<carousel class="carousel-images" *ngIf="showImages">
+    <div *ngFor="let opt of moviesPremiere.data" class="carousel-cell">
+        <img [src]="moviesPremiere.imageBaseUrl + opt.backdrop_path">
+    </div>
+</carousel>
+
+<h1 class="display-4 text-center mt-2">Peliculas más populares</h1>
+
+<div class="row mt-5" id="scroll">
+    <div *ngFor="let opt of moviesPopular.data" class="col-lg-4">
+        <div class="shadow-lg p-3 mb-5 bg-white rounded col-popular">
+            <img class="img-popular mb-2" [src]="moviesPopular.imageBaseUrl + opt.backdrop_path">
+            <label for="">{{opt.title}}</label>
+            <button class="btn btn-success mt-2" (click)="detailsMovie(opt.id)">Ver Detalles</button>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="showSpinner" style="text-align: center;">
+    <div class="spinner-grow spn" role="status">
+        <span class="sr-only"></span>
+    </div>
+    <div class="spinner-grow spn" role="status">
+        <span class="sr-only"></span>
+    </div>
+    <div class="spinner-grow spn" role="status">
+        <span class="sr-only"></span>
+    </div>
+    <div class="spinner-grow spn" role="status">
+        <span class="sr-only"></span>
+    </div>
+</div>
+<!-- <div style="text-align: center;">
+    <div class="spinner-border" role="status">
+        <span class="sr-only"></span>
+      </div>
+</div> -->
+<!-- <div class="search-results" infinite-scroll [infiniteScrollDistance]="2" [infiniteScrollUpDistance]="10"
+
+</div> -->
